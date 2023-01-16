@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Room Reservation</h1>
+    <form action="reserve.php" method="post">
+        <div class="form-group">
+            <label for="room_id">Select a Room:</label>
+            <select class="form-control" id="room_id" name="room_id" required>
+                <option value="1">Room 1</option>
+                <option value="2">Room 2</option>
+                <option value="3">Room 3</option>
+                <option value="4">Room 4</option>
+                <option value="5">Room 5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="start_time">Start Time:</label>
+            <input type="datetime-local" class="form-control" id="start_time" name="start_time" required>
+        </div>
+        <div class="form-group">
+            <label for="end_time">End Time:</label>
+            <input type="datetime-local" class="form-control" id="end_time" name="end_time" required>
+        </div>
+        <div class="form-group">
+            <label for="reserved_by">Name:</label>
+            <input type="text" class="form-control" id="reserved_by" name="reserved_by" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Reserve Room">
+    </form>
+</div>
+</body>
+</html>
